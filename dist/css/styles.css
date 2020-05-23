@@ -1,0 +1,119 @@
+
+html {
+  box-sizing: border-box;
+  background: #A9DBB8;
+  font-family: 'helvetica neue';
+  text-align: center;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+h1 {
+  color: #F0F2EF;
+  font-weight: 600;
+  font-size: 60px;
+}
+
+
+.welcome {
+  font-weight: 400;
+  margin-top: 100px;
+}
+
+.clock-holder{
+  color: white;
+  width: 200px;
+  height: 50px;
+  font-weight: 400;
+  border: .5px solid #F0F2EF;
+  border-radius: 3px;
+  margin: 50px 10px 50px 50px;
+}
+
+#clock {
+  padding: 14px;
+}
+
+.drop-down-dog-nav {
+  width: 200px;
+  height: 50px;
+  border: .5px solid #F0F2EF;
+  margin: 50px 50px 50px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: #F0F2EF;
+  color:#767B91;
+}
+
+.drop-down-dog-nav:hover {
+  background-color: #F0F2EF;
+  color:#767B91;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+}
+
+.drop-down-dog-nav > ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: #F0F2EF;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-align: left;
+}
+
+.drop-down-dog-nav > h3 {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.dog-link {
+  display: none;
+  color:#767B91;
+  text-decoration: none;
+}
+
+.dog-link > a {
+  color: #767B91;
+}
+
+.dog-link.open {
+  display: block;
+  margin: 5px 5px 10px 5px;
+  font-size: 16px;
+}
+
+.dog-link.open::after {
+  padding: 20px
+}
+
+/*  Phase 4: Slide In & Out Classes */
+
+.align-left {
+  float: left;
+  margin-right: 20px;
+}
+
+.align-right {
+  float: right;
+  margin-left: 20px;
+}
+
+.slide {
+  opacity: 0;
+  transition: all .5s;
+}
+
+.align-left.slide {
+  transform: translateX(-30%) scale(0.95);
+}
+
+.align-right.slide {
+  transform: translateX(30%) scale(0.95);
+}
+
+.slide.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
